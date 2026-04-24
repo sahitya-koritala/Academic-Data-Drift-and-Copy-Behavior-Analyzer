@@ -12,6 +12,16 @@ This project generates student data and analyzes how it changes after modificati
 - Compare original and modified data
 - Detect drift and copy issues
 
+### 🗂️ Data Format
+Each student is stored as:
+
+{
+  "id": int,
+  "marks": int,
+  "attendance": int,
+  "scores": [internal, assignment]
+}
+
 ### ⚙️ Features
 - Shallow and Deep Copy
 - Data modification using sqrt
@@ -39,3 +49,5 @@ Shallow copy shares inner data, so changes may affect original data, causing cop
 - Normalized marks
 - Final classification
 
+### Conclusion
+This project helps understand data handling, analysis, and the importance of deep copy in avoiding errors.
